@@ -14,7 +14,14 @@ import javax.faces.bean.SessionScoped;
 public class UserBean implements Serializable{
     String confPassword;
     String password;
+    private double price; 
+    public double getPrice() {
+        return price; } 
+    public void setPrice(double price) {
+        this.price = price; }
 
+    
+    
     public String getPassword() {
         return password;    }
 

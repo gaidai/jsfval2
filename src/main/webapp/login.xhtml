@@ -29,6 +29,15 @@
 			</h:inputSecret>
 
 			<h:message for="confPassword" style="color:red" />
+                        Salary :
+                        <h:inputText id="Salary" value="#{user.price}"
+				size="10" required="true" label="Salary" >
+
+				<f:validateDoubleRange minimum="10.11" maximum="10000.11" />
+
+			</h:inputText>
+
+			<h:message for="Salary" style="color:red" />
 
 		</h:panelGrid>
 
