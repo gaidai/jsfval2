@@ -15,18 +15,20 @@
 
 			Enter your password :
 
-			<h:inputSecret id="password" value="#{user.password}"
+			<h:inputText id="password" value="#{user.password}"
 				size="20" required="true"
-				label="Password" />
+                                label="Password"  validatorMessage="#{mas.uiinput}">
+                            <f:validateRequired />
+                            <f:validateLength maximum="10" minimum="3"  /> </h:inputText>
 
-			<h:message for="password" style="color:red" />
+			<h:message for="password" style="color:red"  />
 
 			Enter your password again :
 
-			<h:inputSecret id="confPassword" value="#{user.confPassword}"
+			<h:inputText id="confPassword" value="#{user.confPassword}"
 				size="20" label="Confirm Password" required="true">
 				<f:validateRequired />
-			</h:inputSecret>
+			</h:inputText>
 
 			<h:message for="confPassword" style="color:red" />
                         
