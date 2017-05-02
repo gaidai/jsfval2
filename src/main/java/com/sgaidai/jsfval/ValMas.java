@@ -14,7 +14,16 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class ValMas implements Serializable{
     
-    String uiinput = " Value is FALSE.";
+    String uiinput = "Value is FALSE.";
+    String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getUiinput() {
         return uiinput;

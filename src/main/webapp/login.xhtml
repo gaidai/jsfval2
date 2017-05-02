@@ -12,7 +12,13 @@
 	<h:form>
 
 		<h:panelGrid columns="3">
-
+                        Enter your Email :
+                        <h:inputText id="mail" value="#{mas.email}" size="20"
+                            required="true" label="Email Address">
+                            <f:validator validatorId="equalsValidator" />
+                        </h:inputText>
+                        <h:message for="mail" style="color:green" />
+                 
 			Enter your password :
 
 			<h:inputText id="password" value="#{user.password}"
