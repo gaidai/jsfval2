@@ -6,8 +6,13 @@
 package com.sgaidai.jsfval;
 
 import java.io.Serializable;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.component.UIComponent;
+import javax.faces.component.UIInput;
+import javax.faces.context.FacesContext;
+import javax.faces.event.ComponentSystemEvent;
 
 @ManagedBean(name="user")
 @SessionScoped
@@ -16,9 +21,10 @@ public class UserBean implements Serializable{
     String confPassword;
     String password;
     
+    
     private double price; 
     private int age;
-  
+ 
    public int getAge() {
       return age;
    }
